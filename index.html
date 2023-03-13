@@ -5,45 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>FirstProject</title>
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="wrapper">
         <div class="logo header__logo">
-          <div class="logo__container"></div>
+          <span class="logo__circle"></span>
           <img src="img/logo__img.svg" alt="logo" class="logo__img" />
         </div>
-        <div class="header__inner">
-          <nav class="header__menu menu">
-            <ul class="menu__list">
-              <li class="menu__list-item">
-                <a href="#" class="menu__link">Home</a>
-              </li>
-              <li class="menu__list-item">
-                <a href="#" class="menu__link">Properties</a>
-                <img src="img/expand_more.svg" alt="" class="expand_more" />
-              </li>
-              <li class="menu__list-item">
-                <a href="#" class="menu__link">About</a>
-              </li>
-              <li class="menu__list-item">
-                <a href="#" class="menu__link">Contact</a>
-              </li>
-              <li class="menu__list-item">
-                <img src="img/search.svg" alt="" class="search" />
-                <a href="#" class="menu__link">Search</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header__cart">
+
+        <nav class="header__menu menu">
+          <a href="#" class="menu__link"><span>Home</span></a>
+
+          <a href="#" class="menu__link"
+            ><span>Properties</span>
+            <div>
+              <img src="img/expand_more.svg" alt="" class="expand_more" />
+            </div>
+          </a>
+
+          <a href="#" class="menu__link"><span>About</span></a>
+
+          <a href="#" class="menu__link"><span>Contact</span></a>
+
+          <a href="#" class="menu__link"
+            ><span>Search</span>
+            <div>
+              <img src="img/search.svg" alt="" class="search" />
+            </div>
+          </a>
+        </nav>
+
+        <div class="button header__button header__button_cart">
           <img src="img/cart_img.svg" alt="" class="cart_img" />
-          <p class="cart_name">Cart</p>
+          <span>Cart</span>
         </div>
-        <div class="find">
-          <p class="find_text">Find a property</p>
-        </div>
+        <div class="button">Find a property</div>
       </div>
     </header>
     <main class="main">
