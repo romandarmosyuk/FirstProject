@@ -23,557 +23,676 @@
 
         <nav class="menu header__menu">
           <a href="#" class="menu__link"><span>Home</span></a>
-
           <a href="#" class="menu__link"
             ><span>Properties</span>
             <div>
               <img src="img/expand_more.svg" alt="" class="expand_more" />
             </div>
           </a>
-
           <a href="#" class="menu__link"><span>About</span></a>
-
           <a href="#" class="menu__link"><span>Contact</span></a>
-
           <a href="#" class="menu__link"
             ><span>Search</span>
             <div>
-              <img src="img/search.svg" alt="" class="search" />
+              <img src="img/search.svg" alt="" />
             </div>
           </a>
         </nav>
 
-        <div class="button header__button header__button_cart">
-          <img src="img/cart_img.svg" alt="" class="cart_img" />
-          <span>Cart</span>
-        </div>
-        <div class="button header__button button_orange">Find a property</div>
+        <button class="button header__button header__button_cart">
+          <img src="img/cart_img.svg" alt="" />
+          <a href="#" class="button__text"><span>Cart</span></a>
+        </button>
+        <button class="button header__button button_orange">
+          <a href="#" class="button__text button__text-orange"
+            >Find a property</a
+          >
+        </button>
       </div>
     </header>
 
     <main>
-      <div class="intro intro__wrapper">
-        <div class="intro__block_wrapper">
-          <div class="geometry_block">
-            <img class="geometry" src="img/geometry.svg" alt="" />
-          </div>
-          <div class="info_block">
-            <div class="info__text"><span>Find your dream place</span></div>
-            <h1>Find house for yor family in minutes</h1>
-            <p>
-              Aenean sodales mauris quis tellus facilisis, vel mattis magna.
-              Interdum curabitur eget aliquam elit in mauris purus.
-            </p>
-            <div class="intro__search">
-              <div class="button intro__button button_search">
-                <img src="img/search.svg" alt="" />
-                <span>Search</span>
+      <section class="intro">
+        <div class="intro__wrapper">
+          <div class="intro__container">
+            <div class="intro__heading heading">
+              <div class="intro__promo promo">
+                <span>Find your dream place</span>
               </div>
-              <div class="button intro__button button_orange">
-                <span>Find property</span>
+              <h1 class="intro__title">Find house for yor family in minutes</h1>
+              <p class="intro__subtitle">
+                Aenean sodales mauris quis tellus facilisis, vel mattis magna.
+                Interdum curabitur eget aliquam elit in mauris purus.
+              </p>
+              <div class="intro__request request">
+                <input type="search" name="search" value='Search' class="intro__input input">
+                </input>
+                <button class="button intro__button button_orange">
+                  <a href="#" class="button__text button__text-orange"><span>Find property</span></a>
+                </button>
               </div>
             </div>
           </div>
-          <div class="geometry_block transform_block">
-            <img class="geometry transform-1" src="img/geometry.svg" alt="" />
+          <div class="intro__image image intro__image_background">
+            <img src="img/main_img.jpg" alt="" />
           </div>
         </div>
-        <div class="imain_img"></div>
-      </div>
-      <div class="wrapper range_logo">
-        <span>As seen on the world's best magazines and media</span>
-        <img src="img/range_logo.svg" alt="" />
-      </div>
+      </section>
 
-      <div class="procedure wrapper">
-        <h1>How it works</h1>
-        <p>
-          Nunc laoreet consequat nunc at consequat. Praesent aliquam mi id
-          efficitur pellentesque. Maecenas varius felis felis.
-        </p>
-        <div class="procedure__catalog">
-          <div class="procedure__card">
-            <div class="procedure__image">
-              <img
-                src="img/house.svg"
-                alt=""
-                style="width: 32px; height: 48px"
-              />
+      <section class="logos">
+        <div class="wrapper logos__wrapper">
+          <p class="logos__subtitle subtitle">
+            As seen on the world's best magazines and media
+          </p>
+          <div class="logos__images">
+            <img src="img/logo-1.svg" alt="" />
+            <img src="img/logo-2.svg" alt="" />
+            <img src="img/logo-3.svg" alt="" />
+            <img src="img/logo-4.svg" alt="" />
+            <img src="img/logo-5.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="procedure">
+        <div class="procedure__wrapper wrapper">
+          <h2 class="procedure__title title">How it works</h2>
+          <p class="procedure__subtitle subtitle">
+            Nunc laoreet consequat nunc at consequat. Praesent aliquam mi id
+            efficitur pellentesque. Maecenas varius felis felis.
+          </p>
+          <div class="procedure__catalog catalog">
+            <div class="procedure__card card">
+              <div class="card__image">
+                <img
+                  src="img/house.svg"
+                  alt=""
+                  style="width: 32px; height: 48px"
+                />
+              </div>
+              <h4 class="card__title">Find property</h4>
+              <p class="card__text">
+                Odales mauris quis tellus facilisis, vel mattis magna interdum.
+                Curabitur eget aliquam elit. In mauris purus, auctor a eleifend
+                non.
+              </p>
             </div>
-            <span>Find property</span>
-            <p>
-              Odales mauris quis tellus facilisis, vel mattis magna interdum.
+            <div class="procedure__card card">
+              <div class="card__image">
+                <img
+                  src="img/receipt.svg"
+                  alt=""
+                  style="width: 32px; height: 48px"
+                />
+              </div>
+              <h4 class="card__title">Make a deal</h4>
+              <p class="card__text">
+                Pellentesque suscipit mauris. Nam dictum, erat a volutpat
+                varius, urna nisi sollicitudin orci, sagittis facilisis odio
+                tortor ac mi.
+              </p>
+            </div>
+            <div class="procedure__card card">
+              <div class="card__image">
+                <img
+                  src="img/key.svg"
+                  alt=""
+                  style="width: 32px; height: 48px"
+                />
+              </div>
+              <h4 class="card__title">Get your keys</h4>
+              <p class="card__text">
+                Nulla vel bibendum purus. Etiam tempus quam vel pulvinar rutrum.
+                Duis semper, metus vitae fermentum consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="articles">
+        <div class="articles__wrapper wrapper">
+          <article class="articles__block comfort">
+            <div class="comfort__heading heading">
+              <div class="comfort__promo promo"><span>Comfort first</span></div>
+              <h2 class="comfort__title title">
+                The best houses for family comfort
+              </h2>
+              <p class="comfort__subtitle subtitle">
+                Ectus ipsum faucibus justo, et semper quam nisl in nibh. Proin
+                sollicitudin, lorem non posuere blandit.
+              </p>
+              <div class="comfort__request request">
+                <button class="properties properties__button button">
+                  <a href="#" class="properties__text"><span>Explore properties</span></a>
+                </button>
+                <div class="contact">
+                  <a href="#" class="contact__text text"><span>Contact agent</span></a>
+                  <img src="img/chevron_right.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="comfort__image image">
+              <img src="img/design_1.png" alt="" />
+            </div>
+          </article>
+
+          <article class="articles__block process">
+            <div class="process__heading heading">
+              <div class="process__promo promo">
+                <span>Quick and easy</span>
+              </div>
+              <h2 class="process__title title">Fast forward process</h2>
+              <p class="process__subtitle subtitle">
+                Ut vitae nisi eu nisi maximus condimentum ac id purus. Duis sit
+                amet mi arcu praesent nec felis nisl.
+              </p>
+              <div class="process__catalog catalog">
+                <div class="process__card card">
+                  <div class="card__image">
+                    <img src="img/payments.svg" alt="" />
+                  </div>
+                  <h4>Affordable prices</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros.
+                  </p>
+                </div>
+                <div class="process__card card">
+                  <div class="card__image">
+                    <img src="img/description.svg" alt="" />
+                  </div>
+                  <h4>Less paper work</h4>
+                  <p>
+                    Curabitur porta luctus semper donec eget lobortis leo ac
+                    finibus nisi.
+                  </p>
+                </div>
+              </div>
+              <div class="process__request request">
+                  <button class="properties properties__button button">
+                     <a href="#" class="properties__text"><span>Explore properties</span></a>
+                  </button>
+                  <div class="contact">
+                     <a href="#" class="contact__text text"><span>Contact agent</span></a>
+                     <img src="img/chevron_right.svg" alt="" />
+                  </div>
+               </div>
+            </div>
+            <div class="process__image image">
+              <img src="img/design _2.png" alt="" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="area">
+        <div class="area__container">
+          <div class="area__wrapper wrapper">
+            <div class="area__heading heading">
+              <div class="area__promo promo">
+                <span>Properties</span>
+              </div>
+              <h2 class="area__title title">Houses in your favorite area</h2>
+            </div>
+            <div class="area__catalog catalog">
+              <div class="area__card card">
+                <div class="area__image image">
+                  <img class="image__design" src="img/card-1.png" alt="" />
+                </div>
+                <div class="area__info info">
+                  <h4>Cozy studio in Los Angeles</h4>
+                  <span>$ 1,200.00 USD</span>
+                  <div class="area__location">
+                    <img src="img/geo.svg" alt="" />
+                    <span>2263 Southlea, Los Angeles</span>
+                  </div>
+                  <div class="area__property">
+                    <img src="img/bathtub.svg" alt="" />
+                    <span>2</span>
+                    <img src="img/bed.svg" alt="" />
+                    <span>2</span>
+                    <img src="img/square_foot.svg" alt="" />
+                    <span>840 sqft</span>
+                  </div>
+                </div>
+              </div>
+              <div class="area__card card">
+                <div class="area__image image">
+                  <img class="image__design" src="img/card-2.png" alt="" />
+                </div>
+                <div class="area__info info">
+                  <h4>Tiny home in San Diego</h4>
+                  <span>$ 740,000.00 USD</span>
+                  <div class="area__location">
+                    <img src="img/geo.svg" alt="" />
+                    <span>2569 El Segundo, San Diego</span>
+                  </div>
+                  <div class="area__property">
+                    <img src="img/bathtub.svg" alt="" />
+                    <span>1</span>
+                    <img src="img/bed.svg" alt="" />
+                    <span>2</span>
+                    <img src="img/square_foot.svg" alt="" />
+                    <span>400 sqft</span>
+                  </div>
+                </div>
+              </div>
+              <div class="area__card card">
+                <div class="area__image image">
+                  <img class="image__design" src="img/card-3.png" alt="" />
+                </div>
+                <div class="area__info info">
+                  <h4>Crown house in New York</h4>
+                  <span>$ 980,000.00 USD</span>
+                  <div class="area__location">
+                    <img src="img/geo.svg" alt="" />
+                    <span>4489 Smity Fielda, New York</span>
+                  </div>
+                  <div class="area__property">
+                    <img src="img/bathtub.svg" alt="" />
+                    <span>2</span>
+                    <img src="img/bed.svg" alt="" />
+                    <span>4</span>
+                    <img src="img/square_foot.svg" alt="" />
+                    <span>3200 sqft</span>
+                  </div>
+                </div>
+              </div>
+              <div class="area__card card">
+                <div class="area__image image">
+                  <img class="image__design" src="img/card-4.png" alt="" />
+                </div>
+                <div class="area__info info">
+                  <h4>Family house in Los Angeles</h4>
+                  <span>$ 4,200.00 USD</span>
+                  <div class="area__location">
+                    <img src="img/geo.svg" alt="" />
+                    <span>2263 Southlea, Los Angeles</span>
+                  </div>
+                  <div class="area__property">
+                    <img src="img/bathtub.svg" alt="" />
+                    <span>2</span>
+                    <img src="img/bed.svg" alt="" />
+                    <span>3</span>
+                    <img src="img/square_foot.svg" alt="" />
+                    <span>1400 sqft</span>
+                  </div>
+                </div>
+              </div>
+              <div class="area__card card">
+                <div class="area__image image">
+                  <img class="image__design" src="img/card-5.svg" alt="" />
+                </div>
+                <div class="area__info info">
+                  <h4 class="info__title">Studio in Las Vegas</h4>
+                  <span>$ 820,000.00 USD</span>
+                  <div class="area__location">
+                    <img src="img/geo.svg" alt="" />
+                    <span>2569 Halls Corner, Las Vegas</span>
+                  </div>
+                  <div class="area__property">
+                    <img src="img/bathtub.svg" alt="" />
+                    <span>2</span>
+                    <img src="img/bed.svg" alt="" />
+                    <span>3</span>
+                    <img src="img/square_foot.svg" alt="" />
+                    <span>2400 sqft</span>
+                  </div>
+                </div>
+              </div>
+              <div class="area__card card">
+                <div class="area__image image">
+                  <img class="image__design" src="img/card-6.svg" alt="" />
+                </div>
+                <div class="area__info info">
+                  <h4>San Diego story</h4>
+                  <span>$ 3,700.00 USD</span>
+                  <div class="area__location">
+                    <img src="img/geo.svg" alt="" />
+                    <span>2569 El Segundo, San Diego</span>
+                  </div>
+                  <div class="area__property">
+                    <img src="img/bathtub.svg" alt="" />
+                    <span>1</span>
+                    <img src="img/bed.svg" alt="" />
+                    <span>2</span>
+                    <img src="img/square_foot.svg" alt="" />
+                    <span>650 sqft</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="area__request request">
+               <button class="properties properties__button button">
+                  <a href="#" class="properties__text"><span>Explore properties</span></a>
+               </button>
+               <div class="contact">
+                  <a href="#" class="contact__text text"><span>Contact agent</span></a>
+                  <img src="img/chevron_right.svg" alt="" />
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="locations">
+        <div class="locations__wrapper wrapper">
+          <div class="locations__heading">
+            <h2 class="title">Locations</h2>
+            <span class="locations__subtitle subtitle"
+              >Nunc mi ante, fringilla eget iaculis et, maximus vel purus
+              integer lacus urna, aliquet non nisl sit amet.</span
+            >
+          </div>
+          <div class="locations__catalog catalog">
+            <div class="locations__card card">
+              <h2 class="locations__title">San Francisco, CA</h2>
+              <div class="contact">
+                <span>View Properties</span>
+                <img src="img/chevron_right.svg" alt="" />
+              </div>
+            </div>
+            <div class="locations__card card">
+              <h2 class="locations__title">Los Angeles, CA</h2>
+              <div class="contact">
+                <span>View Properties</span>
+                <img src="img/chevron_right.svg" alt="" />
+              </div>
+            </div>
+            <div class="locations__card card">
+              <h2 class="locations__title">San Diego, CA</h2>
+              <div class="contact">
+                <span>View Properties</span>
+                <img src="img/chevron_right.svg" alt="" />
+              </div>
+            </div>
+            <div class="locations__card card">
+              <h2 class="locations__title">New York, NY</h2>
+              <div class="contact">
+                <span>View Properties</span>
+                <img src="img/chevron_right.svg" alt="" />
+              </div>
+            </div>
+            <div class="locations__card card">
+              <h2 class="locations__title">Las Vegas, NV</h2>
+              <div class="contact">
+                <span>View Properties</span>
+                <img src="img/chevron_right.svg" alt="" />
+              </div>
+            </div>
+            <div class="locations__card card">
+              <h2 class="locations__title">Miami, FL</h2>
+              <div class="contact">
+                <span>View Properties</span>
+                <img src="img/chevron_right.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="locations__request request">
+            <button class="properties properties__button button">
+               <a href="#" class="properties__text"><span>Explore properties</span></a>
+            </button>
+            <div class="contact">
+               <a href="#" class="contact__text text"><span>Contact agent</span></a>
+               <img src="img/chevron_right.svg" alt="" />
+            </div>
+         </div>
+        </div>
+      </section>
+
+      <section class="priority">
+        <div class="priority__wrapper wrapper">
+          <div class="priority__heading">
+            <div class="priority__image">
+              <img src="img/family_restroom.svg" alt="" />
+            </div>
+            <h2 class="priority__title title">Families are our priority</h2>
+            <p class="priority__subtitle subtitle">
               Curabitur eget aliquam elit. In mauris purus, auctor a eleifend
-              non.
+              non, placerat vel arcu. In non consectetur lorem. Morbi non varius
+              sapien suscipit mauri.
             </p>
-          </div>
-          <div class="procedure__card">
-            <div class="procedure__image">
-              <img
-                src="img/receipt.svg"
-                alt=""
-                style="width: 32px; height: 48px"
-              />
-            </div>
-            <span>Make a deal</span>
-            <p>
-              Pellentesque suscipit mauris. Nam dictum, erat a volutpat varius,
-              urna nisi sollicitudin orci, sagittis facilisis odio tortor ac mi.
-            </p>
-          </div>
-          <div class="procedure__card">
-            <div class="procedure__image">
-              <img src="img/key.svg" alt="" style="width: 32px; height: 48px" />
-            </div>
-            <span>Get your keys</span>
-            <p>
-              Nulla vel bibendum purus. Etiam tempus quam vel pulvinar rutrum.
-              Duis semper, metus vitae fermentum consequat.
-            </p>
+            <button class="priority__button button button_orange">
+               <a href="#" class="button__text button__text-orange">Get started</a> 
+            </button>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="best_houses wrapper">
-        <div class="info_block best_houses__info_block">
-          <div class="info__text"><span>Comfort first</span></div>
-          <h1>The best houses for family comfort</h1>
-          <p>
-            Ectus ipsum faucibus justo, et semper quam nisl in nibh. Proin
-            sollicitudin, lorem non posuere blandit.
+      <section class="review">
+        <div class="review__wrapper wrapper">
+          <h1 class="review__title title">What customers say</h1>
+          <p class="review__subtitle subtitle">
+            Faucibus orci luctus et ultrices posuere cubilia curae.
           </p>
-          <div class="intro__search">
-            <div class="button best_houses__button">
-              <span>Explore properties</span>
+          <div class="review__catalog catalog">
+            <div class="review__card card">
+              <div class="stars">
+                <img class="stars__image" src="img/star.svg" alt="" />
+                <img class="stars__image" src="img/star.svg" alt="" />
+                <img class="stars__image" src="img/star.svg" alt="" />
+                <img class="stars__image" src="img/star.svg" alt="" />
+                <img class="stars__image" src="img/star.svg" alt="" />
+              </div>
+              <q class="review__quote subtitle"
+                >Aliquam erat volutpat. Nulla pretium nec urna et convallis. Ut
+                varius mi lacus, nec molestie libero ultricies nec. Aenean
+                lacinia dui elit, ut gravida quam.</q
+              >
+              <div class="review__commentator commentator">
+                <img
+                  class="commentator__avatar"
+                  src="img/commentator-1.png"
+                  alt=""
+                />
+                <div class="commentator__info">
+                  <span class="commentator__name">Michael Webb</span>
+                  <p class="commentator__profi text">Customer</p>
+                </div>
+              </div>
             </div>
-            <div class="contact">
-              <span>Contact agent</span>
-              <img src="img/chevron_right.svg" alt="" />
+            <div class="review__card card">
+              <div class="stars">
+                <img class="stars__image" src="img/star.svg" alt="" />
+                <img class="stars__image" src="img/star.svg" alt="" />
+                <img class="stars__image" src="img/star.svg" alt="" />
+                <img class="stars__image" src="img/star.svg" alt="" />
+                <img class="stars__image" src="img/star.svg" alt="" />
+              </div>
+              <q class="review__quote subtitle"
+                >Class aptent taciti sociosqu ad litora torquent per conubia
+                nostra, per inceptos himenaeos. Morbi pretium iaculis ultricies.
+                Aenean in leo vitae tortor.</q
+              >
+              <div class="review__commentator commentator">
+                <img
+                  class="commentator__avatar"
+                  src="img/commentator-2.png"
+                  alt=""
+                />
+                <div class="commentator__info">
+                  <span class="commentator__name">Amber Keene</span>
+                  <p class="commentator__profi text">Customer</p>
+                </div>
+              </div>
+            </div>
+            <div class="review__card card">
+              <div class="stars">
+                <img class="stars__image" src="img/star.svg" alt="" />
+                <img class="stars__image" src="img/star.svg" alt="" />
+                <img class="stars__image" src="img/star.svg" alt="" />
+                <img class="stars__image" src="img/star.svg" alt="" />
+                <img class="stars__image" src="img/star.svg" alt="" />
+              </div>
+              <q class="review__quote subtitle"
+                >Condimentum viverra orci. Pellentesque suscipit odio nisl, non
+                ultricies purus mattis eget. In placerat, lorem a sodales
+                ullamcorper, eros nibh laoreet nisl.</q
+              >
+              <div class="review__commentator commentator">
+                <img
+                  class="commentator__avatar"
+                  src="img/commentator-3.png"
+                  alt=""
+                />
+                <div class="commentator__info">
+                  <span class="commentator__name">Sarah Tarleton</span>
+                  <p class="commentator__profi text">Customer</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <img class="best_houses__image" src="img/design_1.png" alt="" />
-      </div>
+      </section>
 
-      <div class="process wrapper">
-        <img class="best_houses__image" src="img/design _2.png" alt="" />
-        <div class="info_block process__info_block">
-          <div class="info__text"><span>Quick and easy</span></div>
-          <h1>Fast forward process</h1>
-          <p>
-            Ut vitae nisi eu nisi maximus condimentum ac id purus. Duis sit amet
-            mi arcu praesent nec felis nisl.
-          </p>
-          <div class="process__catalog">
-            <div class="process__card">
-              <div class="procedure__image">
-                <img
-                  src="img/payments.svg"
-                  alt=""
-                  style="width: 32px; height: 48px"
-                />
-              </div>
-              <span>Affordable prices</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros.
+      <section class="latest">
+        <div class="latest__wrapper wrapper">
+          <div class="latest__heading heading">
+            <div class="latest__promo promo"><span>Blog</span></div>
+            <h2 class="latest__title title">Latest posts</h2>
+            <div class="latest__container">
+              <p class="latest__subtitle subtitle">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia curae. Praesent efficitur nibh massa morbi
+                sagittis ornare dui in ornare.
               </p>
+              <button class="latest__button button">
+               <a href="#" class="latest__text text"><span>View all</span></a>
+              </button>
             </div>
-            <div class="process__card">
-              <div class="procedure__image">
-                <img
-                  src="img/description.svg"
-                  alt=""
-                  style="width: 32px; height: 48px"
-                />
+          </div>
+          <div class="latest__catalog">
+            <div class="latest__card card">
+              <div class="latest__image image">
+                <img class="image__design" src="img/card-1.png" alt="" />
               </div>
-              <span>Less paper work</span>
-              <p>
-                Curabitur porta luctus semper donec eget lobortis leo ac finibus
-                nisi.
-              </p>
-            </div>
-          </div>
-          <div class="intro__search">
-            <div class="button best_houses__button">
-              <span>Explore properties</span>
-            </div>
-            <div class="contact">
-              <span>Contact agent</span>
-              <img src="img/chevron_right.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="houses_area">
-        <div class="geometry_block transform_block-2">
-          <img
-            class="geometry geometry_size transform-2"
-            src="img/geometry.svg"
-            alt=""
-          />
-        </div>
-        <div class="houses_area__title">
-          <div class="info__text info__text_area"><span>Properties</span></div>
-          <h1>Houses in your favorite area</h1>
-        </div>
-        <div class="houses_cataloge">
-          <div class="house_card">
-            <img src="img/card-1.png" alt="" />
-            <div class="house_card__info">
-              <h1>Cozy studio in Los Angeles</h1>
-              <span>$ 1,200.00 USD</span>
-              <div class="house_card__geo">
-                <img src="img/geo.svg" alt="" />
-                <span>2263 Southlea, Los Angeles</span>
-              </div>
-              <img
-                class="house_card__info_img"
-                src="img/card-1_add.svg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="house_card">
-            <img src="img/card-2.png" alt="" />
-            <div class="house_card__info">
-              <h1>Tiny home in San Diego</h1>
-              <span>$ 740,000.00 USD</span>
-              <div class="house_card__geo">
-                <img src="img/geo.svg" alt="" />
-                <span>2569 El Segundo, San Diego</span>
-              </div>
-              <img
-                class="house_card__info_img"
-                src="img/card-2_add.svg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="house_card">
-            <img src="img/card-3.png" alt="" />
-            <div class="house_card__info">
-              <h1>Crown house in New York</h1>
-              <span>$ 980,000.00 USD</span>
-              <div class="house_card__geo">
-                <img src="img/geo.svg" alt="" />
-                <span>4489 Smity Fielda, New York</span>
-              </div>
-              <img
-                class="house_card__info_img"
-                src="img/card-3_add.svg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="house_card">
-            <img src="img/card-4.png" alt="" />
-            <div class="house_card__info">
-              <h1>Family house in Los Angeles</h1>
-              <span>$ 4,200.00 USD</span>
-              <div class="house_card__geo">
-                <img src="img/geo.svg" alt="" />
-                <span>2263 Southlea, Los Angeles</span>
-              </div>
-              <img
-                class="house_card__info_img"
-                src="img/card-4_add.svg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="house_card">
-            <img src="img/card-5.svg" alt="" />
-            <div class="house_card__info">
-              <h1>Studio in Las Vegas</h1>
-              <span>$ 820,000.00 USD</span>
-              <div class="house_card__geo">
-                <img src="img/geo.svg" alt="" />
-                <span>2569 Halls Corner, Las Vegas</span>
-              </div>
-              <img
-                class="house_card__info_img"
-                src="img/card-5_add.svg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="house_card">
-            <img src="img/card-6.svg" alt="" />
-            <div class="house_card__info">
-              <h1>San Diego story</h1>
-              <span>$ 3,700.00 USD</span>
-              <div class="house_card__geo">
-                <img src="img/geo.svg" alt="" />
-                <span>2569 El Segundo, San Diego</span>
-              </div>
-              <img
-                class="house_card__info_img"
-                src="img/card-6_add.svg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div class="search info__search info__search_position">
-          <div class="search__form search__form_text">
-            <span>Explore properties</span>
-          </div>
-          <div class="contact">
-            <span>Contact agent</span>
-            <img src="img/chevron_right.svg" alt="" />
-          </div>
-        </div>
-        <div class="geometry_block transform_block-3">
-          <img
-            class="geometry geometry_size transform-3"
-            src="img/geometry.svg"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="content_location">
-        <div class="content_location__title">
-          <h1>Locations</h1>
-          <span
-            >Nunc mi ante, fringilla eget iaculis et, maximus vel purus integer
-            lacus urna, aliquet non nisl sit amet.</span
-          >
-        </div>
-        <div class="locations_catalog">
-          <div class="location_card">
-            <h1>San Francisco, CA</h1>
-            <div class="contact">
-              <span>View Properties</span>
-              <img src="img/chevron_right.svg" alt="" />
-            </div>
-          </div>
-          <div class="location_card">
-            <h1>Los Angeles, CA</h1>
-            <div class="contact">
-              <span>View Properties</span>
-              <img src="img/chevron_right.svg" alt="" />
-            </div>
-          </div>
-          <div class="location_card">
-            <h1>San Diego, CA</h1>
-            <div class="contact">
-              <span>View Properties</span>
-              <img src="img/chevron_right.svg" alt="" />
-            </div>
-          </div>
-          <div class="location_card">
-            <h1>New York, NY</h1>
-            <div class="contact">
-              <span>View Properties</span>
-              <img src="img/chevron_right.svg" alt="" />
-            </div>
-          </div>
-          <div class="location_card">
-            <h1>Las Vegas, NV</h1>
-            <div class="contact">
-              <span>View Properties</span>
-              <img src="img/chevron_right.svg" alt="" />
-            </div>
-          </div>
-          <div class="location_card">
-            <h1>Miami, FL</h1>
-            <div class="contact">
-              <span>View Properties</span>
-              <img src="img/chevron_right.svg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="search info__search info__search_position">
-          <div class="search__form search__form_text">
-            <span>Explore properties</span>
-          </div>
-          <div class="contact">
-            <span>Contact agent</span>
-            <img src="img/chevron_right.svg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="content_comments">
-        <h1>What customers say</h1>
-        <span>Faucibus orci luctus et ultrices posuere cubilia curae.</span>
-        <div class="commets_catalog">
-          <div class="comment_card">
-            <img src="img/stars.svg" alt="" />
-            <span
-              >"Aliquam erat volutpat. Nulla pretium nec urna et convallis. Ut
-              varius mi lacus, nec molestie libero ultricies nec. Aenean lacinia
-              dui elit, ut gravida quam."</span
-            >
-            <div class="commentator">
-              <img src="img/commentator-1.png" alt="" />
-              <div class="commentator_name">
-                <span>Michael Webb</span>
-                <p>Customer</p>
+              <div class="latest__info info">
+                <div class="latest__block">
+                  <div class="latest__category">Trends</div>
+                  <p class="latest__data">May 10, 2022</p>
+                </div>
+                <h4 class="info__title">The 9 best homes in New York</h4>
+                <p class="text">
+                  Integer tincidunt rutrum faucibus. Proin sit amet varius arcu.
+                  Aliquam vel leo augue donec.
+                </p>
+                <div class="more">
+                  <span>Read more</span>
+                  <img src="img/chevron_right.svg" alt="" />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="comment_card">
-            <img src="img/stars.svg" alt="" />
-            <span
-              >"Class aptent taciti sociosqu ad litora torquent per conubia
-              nostra, per inceptos himenaeos. Morbi pretium iaculis ultricies.
-              Aenean in leo vitae tortor."</span
-            >
-            <div class="commentator">
-              <img src="img/commentator-2.png" alt="" />
-              <div class="commentator_name">
-                <span>Amber Keene</span>
-                <p>Customer</p>
+            <div class="latest__card card">
+              <div class="latest__image image">
+                <img class="image__design" src="img/card-2.png" alt="" />
+              </div>
+              <div class="latest__info info">
+                <div class="latest__block">
+                  <div class="latest__category">DIY</div>
+                  <p class="latest__data">May 10, 2022</p>
+                </div>
+                <h4 class="info__title">
+                  How to easily buy a house with Realco
+                </h4>
+                <p class="text">
+                  Praesent nec felis nisl. Phasellus eget lacus a metus
+                  fringilla fermentum sit amet.
+                </p>
+                <div class="more">
+                  <span>Read more</span>
+                  <img src="img/chevron_right.svg" alt="" />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="comment_card">
-            <img src="img/stars.svg" alt="" />
-            <span
-              >"Condimentum viverra orci. Pellentesque suscipit odio nisl, non
-              ultricies purus mattis eget. In placerat, lorem a sodales
-              ullamcorper, eros nibh laoreet nisl."</span
-            >
-            <div class="commentator">
-              <img src="img/commentator-3.png" alt="" />
-              <div class="commentator_name">
-                <span>Sarah Tarleton</span>
-                <p>Customer</p>
+            <div class="latest__card card">
+              <div class="latest__image image">
+                <img class="image__design" src="img/card-3.png" alt="" />
+              </div>
+              <div class="latest__info info">
+                <div class="latest__block">
+                  <div class="latest__category">DIY</div>
+                  <p class="latest__data">May 10, 2022</p>
+                </div>
+                <h4 class="info__title">Renting houses - complete guide</h4>
+                <p class="text">
+                  Nunc in bibendum leo, gravida scelerisque quam nulla interdum
+                  tellus a turpis.
+                </p>
+                <div class="more">
+                  <span>Read more</span>
+                  <img src="img/chevron_right.svg" alt="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="content_latest_post">
-        <div class="content_latest_post__wrapper">
-          <div class="content_latest_post__title">
-            <div class="info__text"><span>Blog</span></div>
-            <h1>Latest posts</h1>
-            <span
-              >Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-              posuere cubilia curae. Praesent efficitur nibh massa morbi
-              sagittis ornare dui in ornare.</span
-            >
-          </div>
-          <div class="search__form search__form_text post_button">
-            <span>View all</span>
-          </div>
-        </div>
-        <div class="posts_catalog">
-          <div class="post_card">
-            <img src="img/card-1.png" alt="" />
-            <div class="post_card__info">
-              <div class="post_card__block">
-                <div>Trends</div>
-                <span>May 10, 2022</span>
-              </div>
-              <h1>The 9 best homes in New York</h1>
-              <span
-                >Integer tincidunt rutrum faucibus. Proin sit amet varius arcu.
-                Aliquam vel leo augue donec.</span
-              >
-              <div class="more">
-                <span>Read more</span>
-                <img src="img/chevron_right.svg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="post_card">
-            <img src="img/card-2.png" alt="" />
-            <div class="post_card__info">
-              <div class="post_card__block">
-                <div>DIY</div>
-                <span>May 10, 2022</span>
-              </div>
-              <h1>How to easily buy a house with Realco</h1>
-              <span
-                >Praesent nec felis nisl. Phasellus eget lacus a metus fringilla
-                fermentum sit amet.</span
-              >
-              <div class="more">
-                <span>Read more</span>
-                <img src="img/chevron_right.svg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="post_card">
-            <img src="img/card-3.png" alt="" />
-            <div class="post_card__info">
-              <div class="post_card__block">
-                <div>DIY</div>
-                <span>May 10, 2022</span>
-              </div>
-              <h1>Renting houses - complete guide</h1>
-              <span
-                >Nunc in bibendum leo, gravida scelerisque quam nulla interdum
-                tellus a turpis.</span
-              >
-              <div class="more">
-                <span>Read more</span>
-                <img src="img/chevron_right.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__info">
+      <section class="footer__wrapper wrapper">
         <div class="footer__nav">
-          <div class="logo header__logo footer__logo">
+          <div class="footer__logo logo">
             <span class="logo__circle"></span>
-            <img src="img/logo__img.svg" alt="logo" class="logo__img" />
+            <img class="logo__img" src="img/logo__img.svg" alt="logo" />
           </div>
-          <div class="footer__list">
-            <span>Pages</span>
-            <a href="#" class="footer__link"><span>Home</span></a>
-            <a href="#" class="footer__link"><span>About</span></a>
-            <a href="#" class="footer__link"><span>Blog</span></a>
-            <a href="#" class="footer__link"><span>Agents</span></a>
-            <a href="#" class="footer__link"><span>Contact</span></a>
-            <a href="#" class="footer__link"><span>FAQs</span></a>
-            <a href="#" class="footer__link"><span>Properties</span></a>
-          </div>
-          <div class="footer__list">
-            <span>CMS Pages</span>
-            <a href="#" class="footer__link"><span>Property</span></a>
-            <a href="#" class="footer__link"><span>Property Single</span></a>
-            <a href="#" class="footer__link"><span>Blog Categories</span></a>
-            <a href="#" class="footer__link"><span>Blog Single</span></a>
-            <a href="#" class="footer__link"><span>Agent Single</span></a>
-          </div>
-          <div class="footer__list">
-            <span>Utility Pages</span>
-            <a href="#" class="footer__link"><span>Style Guide</span></a>
-            <a href="#" class="footer__link"><span>Changelog</span></a>
-            <a href="#" class="footer__link"><span>Licenses</span></a>
-            <a href="#" class="footer__link"><span>404</span></a>
-            <a href="#" class="footer__link"><span>Password</span></a>
-            <a href="#" class="footer__link"><span>Search</span></a>
+          <div class="footer__info">
+            <div class="footer__list">
+              <span class="footer__title">Pages</span>
+              <a href="#" class="footer__link">Home</a>
+              <a href="#" class="footer__link">About</a>
+              <a href="#" class="footer__link">Blog</a>
+              <a href="#" class="footer__link">Agents</a>
+              <a href="#" class="footer__link">Contact</a>
+              <a href="#" class="footer__link">FAQs</a>
+              <a href="#" class="footer__link">Properties</a>
+            </div>
+            <div class="footer__list">
+              <span class="footer__title">CMS Pages</span>
+              <a href="#" class="footer__link">Property</a>
+              <a href="#" class="footer__link">Property Single</a>
+              <a href="#" class="footer__link">Blog Categories</a>
+              <a href="#" class="footer__link">Blog Single</a>
+              <a href="#" class="footer__link">Agent Single</a>
+            </div>
+            <div class="footer__list">
+              <span class="footer__title">Utility Pages</span>
+              <a href="#" class="footer__link">Style Guide</a>
+              <a href="#" class="footer__link">Changelog</a>
+              <a href="#" class="footer__link">Licenses</a>
+              <a href="#" class="footer__link">404</a>
+              <a href="#" class="footer__link">Password</a>
+              <a href="#" class="footer__link">Search</a>
+            </div>
           </div>
         </div>
         <div class="footer__subscribe">
-          <span>Subscribe</span>
-          <p>
+          <span class="footer__title">Subscribe</span>
+          <p class="text">
             Join our newsletter to stay up to date on features and releases.
           </p>
           <div class="footer__email">
-            <div class="button header__button footer__button_cart">
-              <span>Enter your email</span>
+            <input type="email" value="Enter your email" class="footer__input"></input>
+            <div class="footer__button button button_orange">
+               <a href="#" class="button__text button__text-orange ">Subscribe</a> 
             </div>
-            <div class="button footer__button">Subscribe</div>
           </div>
           <h4>By subscribing you agree to with our Privacy Policy</h4>
         </div>
-      </div>
-      <div class="footer_logo">
-        <div class="footer_logo_wrapper">
-          <span>© Realco by Minimal Square</span>
-          <img src="img/footer_image.png" alt="" />
+      </section>
+
+      <section class="copyrigth">
+        <div class="copyrigth__wrapper">
+          <p class="copyrigth__text">© Realco by Minimal Square</p>
+          <div class="copyrigth__logos">
+            <img src="img/facebook.svg" alt="">
+            <img src="img/insta.svg" alt="">
+            <img src="img/twitter.svg" alt="">
+            <img src="img/linker.svg" alt="">
+          </div>
         </div>
-      </div>
+      </section>
     </footer>
   </body>
 </html>
